@@ -88,12 +88,12 @@ junk.enable_cp936_detection 1
 junk.enable_shift_jis_detection 1
 logwindow.geometry.h 200
 logwindow.geometry.w 400
-logwindow.geometry.x 263
-logwindow.geometry.y 317
-mainwin.geometry.h 1391
+logwindow.geometry.x 262
+logwindow.geometry.y 316
+mainwin.geometry.h 1351
 mainwin.geometry.w 5116
 mainwin.geometry.x 1
-mainwin.geometry.y 1
+mainwin.geometry.y 41
 musical_spectrum.alignment 0
 musical_spectrum.amp_max 0
 musical_spectrum.amp_min -60
@@ -154,7 +154,7 @@ output_plugin pulseaudio2
 playback.loop 1
 playback.order 2
 playback.volume.normalized 1.0000000
-playlist.current 8
+playlist.current 0
 playlist.cursor.0 0
 playlist.cursor.1 33
 playlist.cursor.10 -1
@@ -199,9 +199,9 @@ prefwin.geometry.x 1569
 prefwin.geometry.y 435
 replaygain.processing_flags 0
 resume.paused 1
-resume.playlist 8
-resume.position 49.505130
-resume.track 10
+resume.playlist 0
+resume.position 19.597238
+resume.track 0
 resume_last_session 0
 spectrogram.color.gradient_00 65535 0 0
 spectrogram.color.gradient_01 65535 32896 0
