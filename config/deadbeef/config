@@ -88,8 +88,8 @@ junk.enable_cp936_detection 1
 junk.enable_shift_jis_detection 1
 logwindow.geometry.h 200
 logwindow.geometry.w 400
-logwindow.geometry.x 262
-logwindow.geometry.y 316
+logwindow.geometry.x 261
+logwindow.geometry.y 315
 mainwin.geometry.h 1351
 mainwin.geometry.w 5116
 mainwin.geometry.x 1
@@ -198,10 +198,10 @@ prefwin.geometry.w 1089
 prefwin.geometry.x 1569
 prefwin.geometry.y 435
 replaygain.processing_flags 0
-resume.paused 1
-resume.playlist 0
-resume.position 19.597238
-resume.track 0
+resume.paused 0
+resume.playlist -1
+resume.position -1.000000
+resume.track -1
 resume_last_session 0
 spectrogram.color.gradient_00 65535 0 0
 spectrogram.color.gradient_01 65535 32896 0
