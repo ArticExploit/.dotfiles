@@ -55,6 +55,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias vynil='pactl load-module module-loopback'
 alias vim='nvim'
+alias drp='nohup linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc >/dev/null 2>&1 &'
+alias drpk='killall linux-discord-rich-presence'
 
 #function to extract any sort of archive
 extract () {
