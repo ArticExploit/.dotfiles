@@ -7,7 +7,7 @@
   mangenta:   #d33682;
   cyan:       #2aa198;
   violet:     #6c71c4;
-  emphasis:   #cb4d16;
+  emphasis:   #d33682;
   text:       #eee8d5;
   fg:         rgba ( 238, 232, 213, 100 % );
   bg:         rgba (7, 54, 66, 70 % );
@@ -15,7 +15,7 @@
 
   spacing: 0;
 
-  font: "Knack Nerd Font 14";
+  font: "SF Compact Rounted 14";
   text-color: @text;
 }
 
