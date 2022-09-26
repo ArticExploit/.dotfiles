@@ -55,7 +55,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias vynil='pactl load-module module-loopback'
 alias vim='nvim'
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 #function to extract any sort of archive
 extract () {

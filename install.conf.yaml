@@ -8,5 +8,40 @@
     ~/.config/i3:
         path: config/i3/
         create: true
-
-
+        force: true
+    ~/.config/kitty:
+        path: config/kitty/
+        create: true
+        force: true
+    ~/.config/deadbeef:
+        path: config/deadbeef/
+        create: true
+        force: true
+    ~/.config/fastfetch:
+        path: config/fastfetch/
+        create: true
+        force: true
+    ~/.config/flameshot:
+        path: config/flameshot/
+        create: true
+        force: true
+    ~/.config/picom:
+        path: config/picom/
+        create: true
+        force: true
+    ~/.config/polybar:
+        path: config/polybar/
+        create: true
+        force: true
+    ~/.config/rofi:
+        path: config/rofi/
+        create: true
+        force: true
+    ~/.config/btop:
+        path: config/btop/
+        create: true
+        force: true
+    ~/.local/lib/deadbeef:  
+        path: local/lib/deadbeef
+        create: true
+        force: true

@@ -1,0 +1,108 @@
+* {
+  black:      #002b36;
+  red:        #dc322f;
+  green:      #859900;
+  yellow:     #b58900;
+  blue:       #268bd2;
+  mangenta:   #d33682;
+  cyan:       #2aa198;
+  violet:     #6c71c4;
+  emphasis:   #cb4d16;
+  text:       #eee8d5;
+  fg:         rgba ( 238, 232, 213, 100 % );
+  bg:         rgba (7, 54, 66, 70 % );
+  transparency:      rgba ( 0, 0, 0, 0 % );
+
+  spacing: 0;
+
+  font: "Knack Nerd Font 14";
+  text-color: @text;
+}
+
+window {
+  fullscreen: true;
+  background-color: @bg;
+}
+
+mainbox {
+  padding: 35% 48%;
+}
+
+inputbar {
+  margin: 0px 0px 20px 0px;
+  children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+prompt {
+  text-color: @text;
+}
+
+entry {
+  margin: 0px 0px;
+  text-color: @text;
+}
+
+listview {
+  spacing: 5px;
+  dynamic: true;
+  scrollbar: false;
+  border-color: @transparency;
+}
+
+element {
+  padding: 5px;
+  text-color: @text;
+  highlight: @emphasis;
+  border-radius: 3px;
+}
+
+element.normal.normal {
+    background-color: @transparency;
+    text-color:       @text;
+}
+
+element.normal.urgent {
+    background-color: @transparency;
+    text-color:       @text;
+}
+
+element.normal.active {
+    background-color: @transparency;
+    text-color:       @text;
+}
+
+element.selected.normal {
+    background-color: @transparency;
+    text-color:       @violet;
+}
+
+element.selected.urgent {
+    background-color: @transparency;
+    text-color:       @text;
+}
+
+element.selected.active {
+    background-color: @transparency;
+    text-color:       @text;
+}
+
+element.alternate.normal {
+    background-color: @transparency;
+    text-color:       @text;
+}
+
+element.alternate.urgent {
+    background-color: @transparency;
+    text-color:       @text;
+}
+
+element.alternate.active {
+    background-color: @transparency;
+    text-color:       @text;
+}
+
+button selected {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: @emphasis;
+}
