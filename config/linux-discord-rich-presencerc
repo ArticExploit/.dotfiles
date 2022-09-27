@@ -1,0 +1,28 @@
+#!/usr/bin/sh
+source /home/artic/.config/appid
+cat <<EOF
+[ \
+    { \
+        "application_id": $id, \
+        "state": "λ ", \
+    "details": "artic@arco | ~", \
+        "large_image": { \
+            "key": "https://cdn.discordapp.com/emojis/983808575283527721.gif?size=96&quality=lossless", \
+            "text": "get off my fucking face bitch" \
+        }, \
+        "small_image": null, \
+        "start_timestamp": null, \
+        "end_timestamp": null, \
+        "buttons": [ \
+       { \
+                "label": ".dotfiles", \
+                "url": "https://github.com/ArticExploit/dotfiles" \
+            }, \
+       { \
+                "label": "PGP/GPG key", \
+                "url": "https://raw.githubusercontent.com/ArticExploit/dotfiles/master/gnupg/artic.gpg.pu" \
+            } \
+        ] \
+    } \
+]
+EOF
