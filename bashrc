@@ -7,6 +7,7 @@
 
 ## Set $PATH, which tells the computer where to search for commands
 export PATH="$PATH:/usr/sbin:/sbin:/bin:/usr/bin:/etc:/usr/ucb:/usr/local/bin:/usr/local/local_dfs/bin:/usr/bin/X11:/usr/local/sas:/home/artic/.local/bin"
+export BROWSER=librewolf
 
 ## Where to search for manual pages
 export MANPATH="/usr/share/man:/usr/local/man:/usr/local/local_dfs/man"
