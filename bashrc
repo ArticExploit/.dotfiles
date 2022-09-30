@@ -5,30 +5,22 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-## Set $PATH, which tells the computer where to search for commands
+## Set env variables
 export PATH="$PATH:/usr/sbin:/sbin:/bin:/usr/bin:/etc:/usr/ucb:/usr/local/bin:/usr/local/local_dfs/bin:/usr/bin/X11:/usr/local/sas:/home/artic/.local/bin"
-export BROWSER=librewolf
-
-## Where to search for manual pages
 export MANPATH="/usr/share/man:/usr/local/man:/usr/local/local_dfs/man"
-
-## Which pager to use.
 export PAGER=less
-
-## Choose your weapon
-export VISUAL='subl'
-export EDITOR="nvim"
-export VISUAL
-export EDITOR
+export VISUAL=subl
+export EDITOR=nvim
+export BROWSER=librewolf
 
 ## The maximum number of lines in your history file
 export HISTFILESIZE=50
 
+## Shell customization
+PS1='\[\e[0;36m\]\u\[\e[0;33m\]@\[\e[0;36m\]\h \[\e[0;1;38;5;99m\]| \[\e[0;36m\]\w\n\[\e[0;1;91m\]λ \[\e[0m\]'
 force_color_prompt=yes
 
-PS1='\[\e[0;36m\]\u\[\e[0;33m\]@\[\e[0;36m\]\h \[\e[0;1;38;5;99m\]| \[\e[0;36m\]\w\n\[\e[0;1;91m\]λ \[\e[0m\]'
-
-#Aliases
+## Aliases
 alias cl='clear && fastfetch'
 alias clo='sudo pacman -Sc --noconfirm && yay -Sc --noconfirm'
 alias del='sudo rm -r'
@@ -59,7 +51,7 @@ alias vim='nvim'
 alias drp='nohup linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc >/dev/null 2>&1 &'
 alias drpk='killall linux-discord-rich-presence'
 
-#function to extract any sort of archive
+## Function to extract any sort of archive
 extract () {
      if [ -f $1 ] ; then
          case $1 in
@@ -81,9 +73,13 @@ extract () {
      fi
 }
 
+## startup commands
+
+# SSH-agent start
 if [ -z "$SSH_AUTH_SOCK" ] ; then
 eval `ssh-agent -s`
 ssh-add ~/.ssh/artic
 fi
-clear
-fastfetch
+
+#aestheticc
+clear && fastfetch
