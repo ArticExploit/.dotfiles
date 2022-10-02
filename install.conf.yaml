@@ -42,6 +42,14 @@
         create: true
         force: true
     ~/.local/lib/deadbeef:  
-        path: local/lib/deadbeef
+        path: local/lib/deadbeef/
+        create: true
+        force: true
+    ~/.gnupg/artic.gpg.pub:  
+        path: gnupg/artic.gpg.pub
+        create: true
+        force: true
+    ~/.config/linux-discord-rich-presencerc:
+        path: config/linux-discord-rich-presencerc
         create: true
         force: true
