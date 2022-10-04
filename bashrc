@@ -52,7 +52,7 @@ alias drp='nohup linux-discord-rich-presence -c ~/.config/linux-discord-rich-pre
 alias drpk='killall linux-discord-rich-presence'
 alias mkdir='mkdir -p'
 alias gadd='git add'
-alias gcomm='git commit -m'
+alias gcom='git commit -m'
 alias gup='git push'
 
 ## Function to extract any sort of archive
