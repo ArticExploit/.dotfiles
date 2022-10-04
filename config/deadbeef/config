@@ -86,10 +86,10 @@ hotkey.key32 "Ctrl k" 0 0 toggle_stop_after_album
 hotkeys_created 1
 junk.enable_cp936_detection 1
 junk.enable_shift_jis_detection 1
-logwindow.geometry.h 200
-logwindow.geometry.w 400
-logwindow.geometry.x 260
-logwindow.geometry.y 314
+logwindow.geometry.h 963
+logwindow.geometry.w 1979
+logwindow.geometry.x 1640
+logwindow.geometry.y 340
 mainwin.geometry.h 1351
 mainwin.geometry.w 5116
 mainwin.geometry.x 1
@@ -151,13 +151,13 @@ musical_spectrum.transpose 0
 musical_spectrum.window 1
 network.proxy.port 8080
 output_plugin pulseaudio2
-playback.loop 1
-playback.order 2
+playback.loop 0
+playback.order 0
 playback.volume.normalized 1.0000000
 playlist.current 0
-playlist.cursor.0 0
+playlist.cursor.0 426
 playlist.cursor.1 33
-playlist.cursor.10 -1
+playlist.cursor.10 0
 playlist.cursor.11 0
 playlist.cursor.12 0
 playlist.cursor.2 0
@@ -169,15 +169,15 @@ playlist.cursor.7 28
 playlist.cursor.8 18
 playlist.cursor.9 35
 playlist.groups.spacing 0
-playlist.scroll.0 0
+playlist.scroll.0 9643
 playlist.scroll.1 -33
 playlist.scroll.10 0
 playlist.scroll.11 0
 playlist.scroll.12 0
 playlist.scroll.2 0
-playlist.scroll.3 -127
+playlist.scroll.3 2197
 playlist.scroll.4 0
-playlist.scroll.5 -201
+playlist.scroll.5 4243
 playlist.scroll.6 0
 playlist.scroll.7 0
 playlist.scroll.8 0
@@ -193,15 +193,16 @@ playlist.tab.00006 Lo-Fi
 playlist.tab.00007 Trash
 playlist.tab.00008 Samurai Champloo - The Way of the Samurai
 playlist.tab.00009 Eurobeat
+playlist.tab.00010 Quick Search
 prefwin.geometry.h 713
 prefwin.geometry.w 1089
 prefwin.geometry.x 1569
 prefwin.geometry.y 435
 replaygain.processing_flags 0
 resume.paused 0
-resume.playlist -1
-resume.position -1.000000
-resume.track -1
+resume.playlist 0
+resume.position 0.7430386
+resume.track 432
 resume_last_session 0
 spectrogram.color.gradient_00 65535 0 0
 spectrogram.color.gradient_01 65535 32896 0
