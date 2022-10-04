@@ -17,12 +17,12 @@ export BROWSER=librewolf
 export HISTFILESIZE=50
 
 ## Shell customization
-PS1='\[\e[0;36m\]\u\[\e[0;33m\]@\[\e[0;36m\]\h \[\e[0;1;38;5;99m\]| \[\e[0;36m\]\w\n\[\e[0;1;91m\]λ \[\e[0m\]'
+PS1='\033[38;2;42;161;152m\u\033[38;2;181;137;0m@\033[38;2;42;161;152m\h \033[38;2;108;113;196m| \033[38;2;42;161;152m\w\n\033[38;2;220;50;47mλ \[\e[0m\]'
 force_color_prompt=yes
 
 ## Aliases
 alias cl='clear && fastfetch'
-alias clo='sudo pacman -Sc --noconfirm && yay -Sc --noconfirm'
+alias clp='sudo pacman -Scc --noconfirm && yay -Scc --noconfirm'
 alias del='sudo rm -r'
 alias inst='sudo pacman -S --noconfirm'
 alias insty='yay -S --noconfirm'
@@ -54,6 +54,7 @@ alias mkdir='mkdir -p'
 alias gadd='git add'
 alias gcom='git commit -m'
 alias gup='git push'
+alias clo='sudo pacman -Rns $(pacman -Qtdq)'
 
 ## Function to extract any sort of archive
 extract () {
