@@ -18,7 +18,6 @@ exec_always feh --bg-scale /home/artic/Pictures/retro.png
 exec_always --no-startup-id /home/artic/.config/polybar/poly.sh
 exec --no-startup-id librewolf
 exec --no-startup-id discord
-exec --no-startup-id deadbeef
 exec --no-startup-id linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc
 exec --no-startup-id i3-msg 'workspace 1; exec kitty'
 for_window [class=kitty workspace="1"] floating enable
