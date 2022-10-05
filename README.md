@@ -8,5 +8,5 @@ my dotfiles repo created with [dotbot](https://github.com/anishathalye/dotbot). 
 ```
 ## A little preview of my rice
 
-![App Screenshot](https://media.discordapp.net/attachments/775311243019157515/1023773164976742440/03-42-41_26-Sep-2022.png?width=1278&height=360)
+![App Screenshot](https://cdn.discordapp.com/attachments/775311243019157515/1027048849434497044/unknown.png)
 
