@@ -7,8 +7,6 @@ assign [class="LibreWolf"] $ws2
 assign [class="discord"] $ws2
 assign [class="Hamsket"] $ws3
 assign [class="Signal"] $ws3
-assign [class="MultiMC"] $ws4
-assign [class="csgo_linux64"] $ws4
 assign [class="Deadbeef"] $ws5
 
 
