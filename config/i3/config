@@ -9,7 +9,6 @@ assign [class="Hamsket"] $ws3
 assign [class="Signal"] $ws3
 assign [class="Deadbeef"] $ws5
 
-
 #startup commands
 exec_always --no-startup-id /home/artic/.config/scripts/xkb/run-session.sh
 exec_always xrandr -s 5120x1440
@@ -19,7 +18,6 @@ exec --no-startup-id librewolf
 exec --no-startup-id discord
 exec --no-startup-id linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc
 exec --no-startup-id i3-msg 'workspace 1; exec kitty'
-exec --no-startup-id a2ln
 for_window [class=kitty workspace="1"] floating enable
 for_window [class=kitty workspace="1"] resize set 730 550
 for_window [class=kitty workspace="1"] move [absolute] position center
