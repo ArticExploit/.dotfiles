@@ -1,29 +1,21 @@
 #!/usr/bin/env bash
 
-# CONFIGURATION
-LOCATION=0
-YOFFSET=0
-XOFFSET=0
-WIDTH=8
-WIDTH_WIDE=10
-THEME=solarized
-DEV_ID=$(kdeconnect-cli -a --id-only)
-
 # Color Settings of Icon shown in Polybar
 COLOR_DISCONNECTED='#000'       # Device Disconnected
 COLOR_NEWDEVICE='#ff0'          # New Device
 COLOR_BATTERY_90='#6c71c4'      # Battery >= 90
 COLOR_BATTERY_70='#268bd2'      # Battery >= 70
-COLOR_BATTERY_50='#2aa198'      # Battery >= 50
-COLOR_BATTERY_30='#859900'      # Battery >= 30
-COLOR_BATTERY_10='#b58900'      # Battery >= 10
-COLOR_BATTERY_LOW='#cb4b16'     # Battery <  10
+COLOR_BATTERY_50='#859900'      # Battery >= 50
+COLOR_BATTERY_30='#b58900'      # Battery >= 30
+COLOR_BATTERY_10='#cb4b16'      # Battery >= 10
+COLOR_BATTERY_LOW='#dc322f'     # Battery <  10
+COLOR_FOREGROUND='#eee8d5'
 
 # Icons shown in Polybar
-ICON_SMARTPHONE=''
-ICON_TABLET=''
+icon=''
 SEPERATOR='|'
 
+DEV_ID=$(kdeconnect-cli -a --id-only)
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 show_devices (){
@@ -57,7 +49,7 @@ show_devices (){
 }
 
 show_menu () {
-    menu="$(rofi -sep "|" -dmenu -i -p "$DEV_NAME" -location $LOCATION -yoffset $YOFFSET -xoffset $XOFFSET -theme $THEME -width $WIDTH -hide-scrollbar -line-padding 4 -padding 20 -lines 5 <<< "Battery: $DEV_BATTERY%|Ping|Find Device|Send File|Browse Files|Unpair")"
+    menu="$(rofi -sep "|" -dmenu -config /home/artic/.config/rofi.artic/kdeconnect.rasi -p "$DEV_NAME" -hide-scrollbar -lines 5 <<< "Battery: $DEV_BATTERY%|Ping|Find Device|Send File|Browse Files|Unpair")"
                 case "$menu" in
                     *Ping) qdbus org.kde.kdeconnect "/modules/kdeconnect/devices/$DEV_ID/ping" org.kde.kdeconnect.device.ping.sendPing ;;
                     *'Find Device') qdbus org.kde.kdeconnect "/modules/kdeconnect/devices/$DEV_ID/findmyphone" org.kde.kdeconnect.device.findmyphone.ring ;;
@@ -73,14 +65,14 @@ show_menu () {
 }
 
 show_pmenu () {
-    menu="$(rofi -sep "|" -dmenu -i -p "$DEV_NAME" -location $LOCATION -yoffset $YOFFSET -xoffset $XOFFSET -theme $THEME -width $WIDTH -hide-scrollbar -line-padding 1 -padding 20 -lines 1<<<"Pair Device")"
+    menu="$(rofi -sep "|" -dmenu -config /home/artic/.config/rofi.artic/kdeconnect.rasi -p "$DEV_NAME" -hide-scrollbar -lines 109<<<"Pair Device")"
                 case "$menu" in
                     *'Pair Device') qdbus org.kde.kdeconnect "/modules/kdeconnect/devices/$DEV_ID" org.kde.kdeconnect.device.requestPair
                 esac
 }
 
 show_pmenu2 () {
-    menu="$(rofi -sep "|" -dmenu -i -p "$1 has sent a pairing request" -location $LOCATION -yoffset $YOFFSET -xoffset $XOFFSET -theme $THEME -width $WIDTH_WIDE -hide-scrollbar -line-padding 4 -padding 20 -lines 2 <<< "Accept|Reject")"
+    menu="$(rofi -sep "|" -dmenu -config /home/artic/.config/rofi.artic/kdeconnect.rasi -p "$DEV_NAME" -hide-scrollbar -lines 2 <<< "Accept|Reject")"
                 case "$menu" in
                     *'Accept') qdbus org.kde.kdeconnect "/modules/kdeconnect/devices/$2" org.kde.kdeconnect.device.acceptPairing ;;
                     *) qdbus org.kde.kdeconnect "/modules/kdeconnect/devices/$2" org.kde.kdeconnect.device.rejectPairing
@@ -88,21 +80,15 @@ show_pmenu2 () {
 
 }
 get_icon () {
-    if [ "$2" = "tablet" ]
-    then
-        icon=$ICON_TABLET
-    else
-        icon=$ICON_SMARTPHONE
-    fi
-    case $1 in
+    case $battery in
     "-1")     ICON="%{F$COLOR_DISCONNECTED}$icon%{F-}" ;;
     "-2")     ICON="%{F$COLOR_NEWDEVICE}$icon%{F-}" ;;
-    1*)     ICON="%{F$COLOR_BATTERY_10}$icon%{F-}" ;;
-    3*)     ICON="%{F$COLOR_BATTERY_30}$icon%{F-}" ;;
-    5*)     ICON="%{F$COLOR_BATTERY_50}$icon%{F-}" ;;
-    7*)     ICON="%{F$COLOR_BATTERY_70}$icon%{F-}" ;;
-    9*|100) ICON="%{F$COLOR_BATTERY_90}$icon%{F-}" ;;
-    *)      ICON="%{F$COLOR_BATTERY_LOW}$icon%{F-}" ;;
+    1*|2*)     ICON="%{T8}%{F$COLOR_FOREGROUND}$icon%{F-} %{F$COLOR_BATTERY_10}$battery%%{F-}%{T-}" ;;
+    3*|4*)     ICON="%{T8}%{F$COLOR_FOREGROUND}$icon%{F-} %{F$COLOR_BATTERY_30}$battery%%{F-}%{T-}" ;;
+    5*|6*)     ICON="%{T8}%{F$COLOR_FOREGROUND}$icon%{F-} %{F$COLOR_BATTERY_50}$battery%%{F-}%{T-}" ;;
+    7*|8*)     ICON="%{T8}%{F$COLOR_FOREGROUND}$icon%{F-} %{F$COLOR_BATTERY_70}$battery%%{F-}%{T-}" ;;
+    9*|100) ICON="%{T8}%{F$COLOR_FOREGROUND}$icon%{F-} %{F$COLOR_BATTERY_90}$battery%%{F-}%{T-}" ;;
+    *)      ICON="%{T8}%{F$COLOR_FOREGROUND}$icon%{F-} %{F$COLOR_BATTERY_LOW}$battery%%{F-}%{T-}" ;;
     esac
     echo $ICON
 }

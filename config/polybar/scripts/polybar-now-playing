@@ -19,8 +19,6 @@ update_delay = 0.3
 # For more details/ field names, refer [mpris sepecification](https://www.freedesktop.org/wiki/Specifications/mpris-spec/metadata/)
 metadata_fields = ["xesam:title", "xesam:artist"]
 
-control_chars = [' ',' ',' ',' ']
-
 # (char) : separator for metadata fields
 metadata_separator = "-"
 
