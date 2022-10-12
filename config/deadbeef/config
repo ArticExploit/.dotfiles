@@ -27,7 +27,7 @@ gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 0
 gtkui.playlist.group_by_tf 
 gtkui.search.group_by_tf 
-gtkui.show_menu 1
+gtkui.show_menu 0
 gtkui.start_hidden 0
 gtkui.statusbar.visible 0
 gtkui.statusbar_seltime 0
@@ -88,8 +88,8 @@ junk.enable_cp936_detection 1
 junk.enable_shift_jis_detection 1
 logwindow.geometry.h 963
 logwindow.geometry.w 1979
-logwindow.geometry.x 1635
-logwindow.geometry.y 335
+logwindow.geometry.x 1634
+logwindow.geometry.y 334
 mainwin.geometry.h 1351
 mainwin.geometry.w 5116
 mainwin.geometry.x 1
@@ -154,7 +154,7 @@ output_plugin pulseaudio2
 playback.loop 0
 playback.order 0
 playback.volume.normalized 1.0000000
-playlist.current 5
+playlist.current 1
 playlist.cursor.0 81
 playlist.cursor.1 33
 playlist.cursor.10 0
@@ -201,10 +201,10 @@ prefwin.geometry.w 1089
 prefwin.geometry.x 1570
 prefwin.geometry.y 434
 replaygain.processing_flags 0
-resume.paused 0
-resume.playlist -1
-resume.position -1.000000
-resume.track -1
+resume.paused 1
+resume.playlist 1
+resume.position 83.542076
+resume.track 7
 resume_last_session 0
 spectrogram.color.gradient_00 65535 0 0
 spectrogram.color.gradient_01 65535 32896 0

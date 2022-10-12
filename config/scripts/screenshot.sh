@@ -9,34 +9,21 @@
 theme="/home/artic/.config/rofi/app.rasi"
 
 # Theme Elements
-prompt='Screenshot'
 list_col='1'
 list_row='5'
 win_width='520px'
 
-# Options
-layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
-if [[ "$layout" == 'NO' ]]; then
-	option_1=" Capture Desktop"
-	option_2=" Capture GUI"
-	option_3=" Capture & Upload"
-	option_4=" Capture in 5s"
-	option_5=" Clear Server Screenshots"
-else
-	option_1=""
-	option_2=""
-	option_3=""
-	option_4=""
-	option_5=""
-fi
+option_1="Capture Desktop"
+option_2="Capture GUI"
+option_3="Capture & Upload"
+option_4="Capture in 5s"
+option_5="Clear Server Screenshots"
 
 # Rofi CMD
 rofi_cmd() {
 	rofi -theme-str "window {width: $win_width;}" \
 		-theme-str "listview {columns: $list_col; lines: $list_row;}" \
-		-theme-str 'textbox-prompt-colon {str: "";}' \
 		-dmenu \
-		-p "$prompt" \
 		-theme ${theme}
 }
 

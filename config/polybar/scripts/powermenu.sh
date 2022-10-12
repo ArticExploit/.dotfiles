@@ -9,39 +9,24 @@
 theme="/home/artic/.config/rofi/app.rasi"
 
 # Theme Elements
-prompt="`hostname`"
-mesg="Uptime : `uptime -p | sed -e 's/up //g'`"
 list_col='1'
 list_row='6'
+win_width='520px'
 
 # Options
-layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
-if [[ "$layout" == 'NO' ]]; then
-	option_1=" Lock"
-	option_2=" Logout"
-	option_3=" Suspend"
-	option_4=" Hibernate"
-	option_5=" Reboot"
-	option_6=" Shutdown"
-	yes=' Yes'
-	no=' No'
-else
-	option_1=""
-	option_2=""
-	option_3=""
-	option_4=""
-	option_5=""
-	option_6=""
-	yes=''
-	no=''
-fi
+option_1="Lock"
+option_2="Logout"	
+option_3="Suspend"
+option_4="Hibernate"
+option_5="Reboot"
+option_6="Shutdown"
+yes='Yes'
+no='No'
 
 # Rofi CMD
 rofi_cmd() {
 	rofi -theme-str "listview {columns: $list_col; lines: $list_row;}" \
-		-theme-str 'textbox-prompt-colon {str: "";}' \
 		-dmenu \
-		-p "$prompt" \
 		-mesg "$mesg" \
 		-markup-rows \
 		-theme ${theme}
