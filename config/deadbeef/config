@@ -88,8 +88,8 @@ junk.enable_cp936_detection 1
 junk.enable_shift_jis_detection 1
 logwindow.geometry.h 963
 logwindow.geometry.w 1979
-logwindow.geometry.x 1636
-logwindow.geometry.y 336
+logwindow.geometry.x 1635
+logwindow.geometry.y 335
 mainwin.geometry.h 1351
 mainwin.geometry.w 5116
 mainwin.geometry.x 1
@@ -153,31 +153,31 @@ network.proxy.port 8080
 output_plugin pulseaudio2
 playback.loop 0
 playback.order 0
-playback.volume.normalized 0.4466836
-playlist.current 4
-playlist.cursor.0 0
+playback.volume.normalized 1.0000000
+playlist.current 5
+playlist.cursor.0 81
 playlist.cursor.1 33
 playlist.cursor.10 0
 playlist.cursor.11 0
 playlist.cursor.12 0
 playlist.cursor.2 0
 playlist.cursor.3 127
-playlist.cursor.4 13
-playlist.cursor.5 201
+playlist.cursor.4 31
+playlist.cursor.5 14
 playlist.cursor.6 0
 playlist.cursor.7 28
 playlist.cursor.8 18
 playlist.cursor.9 35
 playlist.groups.spacing 0
-playlist.scroll.0 0
+playlist.scroll.0 1351
 playlist.scroll.1 -33
 playlist.scroll.10 0
 playlist.scroll.11 0
 playlist.scroll.12 0
 playlist.scroll.2 0
-playlist.scroll.3 2197
-playlist.scroll.4 -13
-playlist.scroll.5 4243
+playlist.scroll.3 2206
+playlist.scroll.4 -31
+playlist.scroll.5 -14
 playlist.scroll.6 0
 playlist.scroll.7 0
 playlist.scroll.8 0
@@ -194,15 +194,17 @@ playlist.tab.00007 Trash
 playlist.tab.00008 Samurai Champloo - The Way of the Samurai
 playlist.tab.00009 Eurobeat
 playlist.tab.00010 Quick Search
+playlist.tab.00011 Quick Search
+playlist.tab.00012 Quick Search
 prefwin.geometry.h 713
 prefwin.geometry.w 1089
-prefwin.geometry.x 1569
-prefwin.geometry.y 435
+prefwin.geometry.x 1570
+prefwin.geometry.y 434
 replaygain.processing_flags 0
 resume.paused 1
-resume.playlist 4
-resume.position 33.622154
-resume.track 13
+resume.playlist 5
+resume.position 47.554191
+resume.track 14
 resume_last_session 0
 spectrogram.color.gradient_00 65535 0 0
 spectrogram.color.gradient_01 65535 32896 0

@@ -7,7 +7,7 @@ from unicodedata import east_asian_width
 # Config options
 
 # (int) : Length of media info string. If length of string exceedes this value, the text will scroll. Default value is 20
-message_display_len = 20
+message_display_len = 19
 
 # (int) : Font index of polybar. this value should be 1 more than the font value specified in polybar config.
 font_index = 8
@@ -15,17 +15,28 @@ font_index = 8
 # (float) : Update speed of the text in seconds.
 update_delay = 0.3
 
+# (list) : list of chars containing previous, play, pause, next glyphs for media controls in respective order
+control_chars = [' ',' ',' ',' ']
+
+# (dict) : dict of char icons to display as prefix.
+# If player name is available as key, then use the corressponding icon,
+# else default key value.
+# example:
+display_player_prefix = {
+    "spotify":  '',
+    "firefox":  '',
+    "default":  ''
+}
+
 # (list) : list of metadata fields based on mpris sepecification.
 # For more details/ field names, refer [mpris sepecification](https://www.freedesktop.org/wiki/Specifications/mpris-spec/metadata/)
 metadata_fields = ["xesam:title", "xesam:artist"]
-
-control_chars = [' ',' ',' ',' ']
 
 # (char) : separator for metadata fields
 metadata_separator = "-"
 
 # (bool) : Hide text when no player is available? True disables the output for no players.
-hide_output = True
+hide_output = False
 
 # Defult initialization
 current_player = None
@@ -66,12 +77,35 @@ def get_metadata(player):
         pass
     return metadata
 
-def player_status(status=""):
-    global status_paused
+def update_prefix_suffix(player_name="", status=""):
+    global display_prefix, display_suffix, status_paused
+
+    player_option = ""
+    if player_name != "":
+        player_option = "-p " + player_name
+
+    prev_button = "%%{A:playerctl %s previous :}%c%%{A}"    %(player_option,control_chars[0])
+    play_button = "%%{A:playerctl %s play :}%c%%{A}"        %(player_option,control_chars[1])
+    pause_button = "%%{A:playerctl %s pause :}%c%%{A}"      %(player_option,control_chars[2])
+    next_button = "%%{A:playerctl %s next :}%c%%{A}"        %(player_option,control_chars[3])
+
+    suffix = "" + prev_button
     if status == "Playing":
+        suffix += ""+pause_button
         status_paused = False
     else:
+        suffix += ""+play_button
         status_paused = True
+    suffix += ""+next_button
+    # print(suffix)
+    display_suffix = suffix
+
+    for key in display_player_prefix.keys():
+        if key in player_name:
+            display_prefix = display_player_prefix[key]
+            break
+    else:
+        display_prefix = display_player_prefix["default"]
 
 def update_players():
     global player_names, players, session_bus, current_player, last_player_name
@@ -93,10 +127,10 @@ def handle_event(*args):
 #    print("SIGUSR1: updated values - current_player = %d  players len = %d"%(current_player,len(players)))
 
 def update_message():
-    global players, current_player,player_names, message, display_text, message_display_len, last_player_name
+    global players, current_player,player_names, message, display_text, message_display_len, display_suffix, last_player_name
     if len(players) == 0:
-        tmp_message = "Hello friend."
-        player_status()
+        tmp_message = "   Hello friend."
+        update_prefix_suffix()
     else:
         name = get_name_by_index(current_player)
         status = get_status(players[current_player])
@@ -111,8 +145,8 @@ def update_message():
             metadata_string_list.append(str(result))
         metadata_string = (" "+metadata_separator+" ").join(metadata_string_list)
         if visual_len(metadata_string) > message_display_len:
-            metadata_string = " " + metadata_string
-        player_status(status)
+            metadata_string = " " + metadata_string + " -"
+        update_prefix_suffix(name,status)
         tmp_message = ""
         if metadata_string:
             tmp_message += str(metadata_string)
@@ -158,12 +192,15 @@ def make_visual_len(text, visual_desired_length):
     return altered_text
 
 def print_text():
-    global display_text, message_display_len, players, player_names
+    global display_text, message_display_len, players, player_names, display_prefix, display_suffix
     if hide_output and len(players)==0:
         print("", flush = True)
         return
     scroll()
-    print("%%{T%d}" % (font_index) + make_visual_len(display_text, message_display_len), flush=True)
+    print(display_prefix + " " +
+        "%%{T%d}" % (font_index) +
+        make_visual_len(display_text, message_display_len) +
+        "%{T-}" + display_suffix, flush=True)
 
 def main():
     global current_player, players
