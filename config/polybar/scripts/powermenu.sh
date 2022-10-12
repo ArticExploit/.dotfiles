@@ -6,7 +6,7 @@
 ## Applets : Power Menu
 
 # Import Current Theme
-theme="/home/artic/.config/rofi.artic/app.rasi"
+theme="/home/artic/.config/rofi/app.rasi"
 
 # Theme Elements
 prompt="`hostname`"
