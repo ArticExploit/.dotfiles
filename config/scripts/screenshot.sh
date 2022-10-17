@@ -14,9 +14,9 @@ list_row='5'
 win_width='520px'
 
 option_1="Capture GUI"
-option_2="Capture Desktop"
-option_3="Capture & Upload"
-option_4="Capture in 5s"
+option_2="Capture & Upload"
+option_3="Capture in 5s"
+option_4="Capture Desktop"
 option_5="Clear Server Screenshots"
 
 # Rofi CMD
@@ -66,9 +66,9 @@ run_cmd() {
 	elif [[ "$1" == '--opt2' ]]; then
 		shotnup
 	elif [[ "$1" == '--opt3' ]]; then
-		shotfull
-	elif [[ "$1" == '--opt4' ]]; then
 		shot5
+	elif [[ "$1" == '--opt4' ]]; then
+		shotfull
 	elif [[ "$1" == '--opt5' ]]; then
 		delss
 	fi
