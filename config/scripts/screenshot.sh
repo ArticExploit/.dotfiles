@@ -13,8 +13,8 @@ list_col='1'
 list_row='5'
 win_width='520px'
 
-option_1="Capture Desktop"
-option_2="Capture GUI"
+option_1="Capture GUI"
+option_2="Capture Desktop"
 option_3="Capture & Upload"
 option_4="Capture in 5s"
 option_5="Clear Server Screenshots"
@@ -62,11 +62,11 @@ local_shot () {
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		shotfull
-	elif [[ "$1" == '--opt2' ]]; then
 		local_shot
-	elif [[ "$1" == '--opt3' ]]; then
+	elif [[ "$1" == '--opt2' ]]; then
 		shotnup
+	elif [[ "$1" == '--opt3' ]]; then
+		shotfull
 	elif [[ "$1" == '--opt4' ]]; then
 		shot5
 	elif [[ "$1" == '--opt5' ]]; then
