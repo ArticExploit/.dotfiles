@@ -53,3 +53,7 @@
         path: config/linux-discord-rich-presencerc
         create: true
         force: true
+    ~/.config/scripts:
+        path: config/scripts/
+        create: true
+        force: true
