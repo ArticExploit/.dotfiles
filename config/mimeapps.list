@@ -1,0 +1,37 @@
+[Added Associations]
+application/x-shellscript=sublime_text.desktop;
+application/x-executable=sublime_text.desktop;
+application/octet-stream=sublime_text.desktop;
+text/plain=sublime_text.desktop;
+application/vnd.ms-publisher=sublime_text.desktop;
+x-scheme-handler/http=librewolf.desktop;
+x-scheme-handler/https=librewolf.desktop;
+x-scheme-handler/chrome=librewolf.desktop;
+text/html=librewolf.desktop;
+application/x-extension-htm=librewolf.desktop;
+application/x-extension-html=librewolf.desktop;
+application/x-extension-shtml=librewolf.desktop;
+application/xhtml+xml=librewolf.desktop;
+application/x-extension-xhtml=librewolf.desktop;
+application/x-extension-xht=librewolf.desktop;
+text/x-csrc=sublime_text.desktop;
+application/pdf=librewolf.desktop;
+application/x-sharedlib=sublime_text.desktop;
+image/gif=librewolf.desktop;
+application/x-apple-diskimage=android-studio.desktop;
+image/png=feh.desktop;
+application/json=sublime_text.desktop;
+
+[Default Applications]
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
+x-scheme-handler/chrome=librewolf.desktop
+text/html=librewolf.desktop
+application/x-extension-htm=librewolf.desktop
+application/x-extension-html=librewolf.desktop
+application/x-extension-shtml=librewolf.desktop
+application/xhtml+xml=librewolf.desktop
+application/x-extension-xhtml=librewolf.desktop
+application/x-extension-xht=librewolf.desktop
+x-scheme-handler/discord-424928021309554698=discord-424928021309554698.desktop
+inode/directory=nautilus.desktop
