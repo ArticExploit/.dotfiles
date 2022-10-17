@@ -9,9 +9,10 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "run";
+	modi:                       "run,drun";
     show-icons:                 true;
     display-run:                "RUN";
+    display-drun:               "APPS";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
@@ -59,7 +60,7 @@ imagebox {
     background-color:            transparent;
     background-image:            url("~/Pictures/catstare.png", height);
     orientation:                 vertical;
-    children:                    [ "inputbar", "dummy" ];
+    children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
 
 listbox {
@@ -98,6 +99,25 @@ entry {
     cursor:                      text;
     placeholder:                 "what can I launch for ya?";
     placeholder-color:           inherit;
+}
+
+/*****----- Mode Switcher -----*****/
+mode-switcher{
+    enabled:                     true;
+    spacing:                     20px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+button {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @background-alt;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            @selected;
+    text-color:                  @foreground;
 }
 
 /*****----- Listview -----*****/
