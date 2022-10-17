@@ -11,13 +11,12 @@ export MANPATH="/usr/share/man:/usr/local/man:/usr/local/local_dfs/man"
 export PAGER=less
 export VISUAL=subl
 export EDITOR=nvim
-export BROWSER=librewolf
 
 ## The maximum number of lines in your history file
 export HISTFILESIZE=50
 
 ## Shell customization
-PS1='\033[38;2;108;113;196m\u\033[38;2;181;137;0m@\033[38;2;108;113;196m\h \033[38;2;133;153;0m| \033[38;2;38;139;210m\w \[\033[38;2;42;161;152m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2) \n\033[38;2;211;54;130mλ \[\e[0m\]'
+PS1='\[\033[38;2;108;113;196m\]\u\[\033[38;2;181;137;0m\]@\[\033[38;2;108;113;196m\]\h \[\033[38;2;133;153;0m\]| \[\033[38;2;38;139;210m\]\w \[\033[38;2;42;161;152m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2) \n\[\033[38;2;211;54;130m\]λ \[\e[0m\]'
 force_color_prompt=yes
 
 ## Aliases
