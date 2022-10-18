@@ -27,7 +27,6 @@ no='No'
 rofi_cmd() {
 	rofi -theme-str "listview {columns: $list_col; lines: $list_row;}" \
 		-dmenu \
-		-mesg "$mesg" \
 		-markup-rows \
 		-theme ${theme}
 }
