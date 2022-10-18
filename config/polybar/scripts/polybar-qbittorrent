@@ -51,4 +51,4 @@ if not failed:
     cumulative_percentage = 0
     if len(active) > 0:
         cumulative_percentage = reduce(lambda a,b:a+b['progress'], active,0) / len(active)        
-    print(f' {len(active)}   {cumulative_percentage:.2%}   {upspeed:.2f}{upunit}   {dlspeed:.2f}{dlunit}')
+    print(f' {len(active)} ({cumulative_percentage:.2%}) ({upspeed:.2f}{upunit}) ({dlspeed:.2f}{dlunit})')
