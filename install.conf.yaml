@@ -57,3 +57,11 @@
         path: config/scripts/
         create: true
         force: true
+    ~/.config/mimeapps.list:
+        path: config/mimeapps.list
+        create: true
+        force: true
+    ~/.config/dunst:
+        path: config/dunst/
+        create: true
+        force: true
