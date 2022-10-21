@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=lwls
+Exec=/usr/bin/librewolf -P less-strict --no-remote
+Type=Application
+Class=librewolf
+Icon=librewolf
+Categories=Web;Browser;
