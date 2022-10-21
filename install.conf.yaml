@@ -65,3 +65,7 @@
         path: config/dunst/
         create: true
         force: true
+    ~/.local/share/applications/lwls.desktop:
+        path: local/share/applications/lwls.desktop
+        create: true
+        force: true
