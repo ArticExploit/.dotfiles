@@ -11,6 +11,7 @@ export MANPATH="/usr/share/man:/usr/local/man:/usr/local/local_dfs/man"
 export PAGER=less
 export VISUAL=subl
 export EDITOR=nvim
+export DISPLAY=:0
 
 ## The maximum number of lines in your history file
 export HISTFILESIZE=50
