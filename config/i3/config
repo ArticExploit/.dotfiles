@@ -5,7 +5,6 @@ set $mod Mod4
 # Assign Workspaces:
 assign [class="LibreWolf"] $ws2
 assign [class="discord"] $ws2
-assign [class="Hamsket"] $ws3
 assign [class="Signal"] $ws3
 assign [class="Deadbeef"] $ws5
 
