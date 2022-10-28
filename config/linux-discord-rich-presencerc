@@ -20,7 +20,7 @@ cat <<EOF
             }, \
        { \
                 "label": "PGP and SSH keys", \
-                "url": "https://media.articexploit.xyz:8443/files" \
+                "url": "https://media.articexploit.xyz:8443/keys/" \
             } \
         ] \
     } \
