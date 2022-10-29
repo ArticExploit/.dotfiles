@@ -7,7 +7,7 @@ cat <<EOF
         "state": "λ ", \
     "details": "artic@arco | ~", \
         "large_image": { \
-            "key": "https://cdn.discordapp.com/emojis/912188699960311868.gif?size=96&quality=lossless", \
+            "key": "https://cdn.discordapp.com/emojis/842958943269683242.gif?size=96&quality=lossless", \
             "text": "despair" \
         }, \
         "small_image": null, \
