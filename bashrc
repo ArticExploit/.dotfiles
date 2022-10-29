@@ -50,6 +50,7 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias clo='sudo pacman -Rns $(pacman -Qtdq)'
+alias drp='linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc & disown'
 
 ## Function to extract any sort of archive
 extract () {
