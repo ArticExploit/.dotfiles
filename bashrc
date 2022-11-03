@@ -31,13 +31,13 @@ alias ls='ls -AhN --color=auto --group-directories-first --quoting-style=literal
 alias rem='sudo pacman -Rns --noconfirm'
 alias remy='yay -Rns --noconfirm'
 alias sdn='sudo shutdown -h now'
-alias server='ssh artic@192.168.5.190'
+alias server='ssh artic@10.3.44.10'
 alias syup='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
 alias x='startx'
-alias yta='youtube-dl -x --audio-format mp3 -f bestaudio/best'
-alias ytv='youtube-dl -f bestvideo+bestaudio'
+alias yta='yt-dlp -x --audio-format mp3 -f bestaudio/best'
+alias ytv='yt-dlp -f bestvideo+bestaudio'
 alias cat='bat -pP --theme="Solarized (dark)"'
-alias delss='ssh artic@192.168.5.190 "rm -r /var/www/html/images/*"'
+alias delss='ssh artic@10.3.44.10 "rm -r /var/www/html/images/*"'
 alias cp='cp -r'
 alias tree='tree -C --dirsfirst --noreport'
 alias ..='cd ..'
@@ -51,7 +51,7 @@ alias gc='git commit -m'
 alias gp='git push'
 alias clo='sudo pacman -Rns $(pacman -Qtdq)'
 alias drp='linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc & disown'
-
+alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=literal'
 ## Function to extract any sort of archive
 extract () {
      if [ -f $1 ] ; then
