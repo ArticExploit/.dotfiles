@@ -52,6 +52,8 @@ alias gp='git push'
 alias clo='sudo pacman -Rns $(pacman -Qtdq)'
 alias drp='linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc & disown'
 alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=literal'
+alias anime='ani-cli -q best'
+
 ## Function to extract any sort of archive
 extract () {
      if [ -f $1 ] ; then
@@ -77,10 +79,8 @@ extract () {
 ## startup commands
 
 # SSH-agent start
-if [ -z "$SSH_AUTH_SOCK" ] ; then
 eval `ssh-agent -s`
 ssh-add ~/.ssh/artic
-fi
 
 #aestheticc
 clear && fastfetch
