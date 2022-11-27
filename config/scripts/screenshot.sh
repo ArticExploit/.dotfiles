@@ -42,7 +42,7 @@ shot5 () {
 }
 
 delss () {
-	ssh artic@192.168.5.190 "rm -r /var/www/html/images/*"
+	ssh artic@10.3.44.10 "rm -r /var/www/html/images/*"
 }
 
 shotnup () {
@@ -50,7 +50,7 @@ shotnup () {
 	FILE=""$RND".png"
 	URL="https://media.articexploit.xyz:8443/images/${FILE}"
 	flameshot gui -r > /home/artic/Pictures/screenshots/$FILE
-	scp -i ~/.ssh/artic /home/artic/Pictures/screenshots/$FILE artic@192.168.5.14:/var/www/html/images
+	scp -i ~/.ssh/artic /home/artic/Pictures/screenshots/$FILE artic@10.3.44.10:/var/www/html/images
 	rm -r /home/artic/Pictures/screenshots/$FILE
 	echo $URL | xclip -selection clipboard
 }

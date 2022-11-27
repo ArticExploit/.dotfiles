@@ -1,6 +1,6 @@
 cli_add_playlist_name Default
 cli_add_to_specific_playlist 0
-deadbeef_version 1.9.2
+deadbeef_version 1.9.3
 ffmpeg.enable_all_exts 1
 ffmpeg.extensions aa3;oma;ac3;vqf;amr;tak;dsf;dff;wma;3gp;mp4;m4a
 gtkui.action_separators 1
@@ -88,8 +88,8 @@ junk.enable_cp936_detection 1
 junk.enable_shift_jis_detection 1
 logwindow.geometry.h 963
 logwindow.geometry.w 1979
-logwindow.geometry.x 1634
-logwindow.geometry.y 334
+logwindow.geometry.x 1626
+logwindow.geometry.y 326
 mainwin.geometry.h 1351
 mainwin.geometry.w 5116
 mainwin.geometry.x 1
@@ -152,33 +152,33 @@ musical_spectrum.window 1
 network.proxy.port 8080
 output_plugin pulseaudio2
 playback.loop 0
-playback.order 0
-playback.volume.normalized 1.0000000
-playlist.current 1
+playback.order 2
+playback.volume.normalized 0.1032513
+playlist.current 0
 playlist.cursor.0 81
 playlist.cursor.1 33
 playlist.cursor.10 0
 playlist.cursor.11 0
 playlist.cursor.12 0
-playlist.cursor.2 0
+playlist.cursor.2 5
 playlist.cursor.3 127
 playlist.cursor.4 31
-playlist.cursor.5 14
-playlist.cursor.6 0
+playlist.cursor.5 0
+playlist.cursor.6 785
 playlist.cursor.7 28
 playlist.cursor.8 18
 playlist.cursor.9 35
 playlist.groups.spacing 0
-playlist.scroll.0 1351
+playlist.scroll.0 0
 playlist.scroll.1 -33
 playlist.scroll.10 0
 playlist.scroll.11 0
 playlist.scroll.12 0
-playlist.scroll.2 0
+playlist.scroll.2 -5
 playlist.scroll.3 2206
 playlist.scroll.4 -31
-playlist.scroll.5 -14
-playlist.scroll.6 0
+playlist.scroll.5 0
+playlist.scroll.6 -785
 playlist.scroll.7 0
 playlist.scroll.8 0
 playlist.scroll.9 0
@@ -194,17 +194,15 @@ playlist.tab.00007 Trash
 playlist.tab.00008 Samurai Champloo - The Way of the Samurai
 playlist.tab.00009 Eurobeat
 playlist.tab.00010 Quick Search
-playlist.tab.00011 Quick Search
-playlist.tab.00012 Quick Search
 prefwin.geometry.h 713
 prefwin.geometry.w 1089
 prefwin.geometry.x 1570
 prefwin.geometry.y 434
 replaygain.processing_flags 0
 resume.paused 1
-resume.playlist 1
-resume.position 83.542076
-resume.track 7
+resume.playlist 0
+resume.position 1.4391832
+resume.track 81
 resume_last_session 0
 spectrogram.color.gradient_00 65535 0 0
 spectrogram.color.gradient_01 65535 32896 0
