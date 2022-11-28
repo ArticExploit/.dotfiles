@@ -33,7 +33,7 @@ alias remy='yay -Rns --noconfirm'
 alias sdn='sudo shutdown -h now'
 alias server='ssh artic@10.3.44.10'
 alias syup='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
-alias x='startx && sshfs artic@10.3.44.10:/ /mnt/server'
+alias x='startx'
 alias yta='yt-dlp -x --audio-format mp3 -f bestaudio/best'
 alias ytv='yt-dlp -f bestvideo+bestaudio'
 alias cat='bat -pP --theme="Solarized (dark)"'
@@ -53,7 +53,7 @@ alias clo='sudo pacman -Rns $(pacman -Qtdq)'
 alias drp='linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc & disown'
 alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=literal'
 alias anime='ani-cli -q best'
-
+alias serverfs='sshfs artic@10.3.44.10:/ /mnt/server'
 ## Function to extract any sort of archive
 extract () {
      if [ -f $1 ] ; then
