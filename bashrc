@@ -12,6 +12,7 @@ export PAGER=less
 export VISUAL=subl
 export EDITOR=nvim
 export DISPLAY=:0
+export BROWSER=/usr/bin/librewolf
 
 ## The maximum number of lines in your history file
 export HISTFILESIZE=50
@@ -30,7 +31,6 @@ alias ka='killall'
 alias ls='ls -AhN --color=auto --group-directories-first --quoting-style=literal'
 alias rem='sudo pacman -Rns --noconfirm'
 alias remy='yay -Rns --noconfirm'
-alias sdn='sudo shutdown -h now'
 alias server='ssh artic@10.3.44.10'
 alias syup='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
 alias x='startx'
@@ -43,7 +43,7 @@ alias tree='tree -C --dirsfirst --noreport'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias vynil='pactl load-module module-loopback'
+alias vinyl='pactl load-module module-loopback'
 alias vim='nvim'
 alias mkdir='mkdir -p'
 alias ga='git add'
@@ -53,7 +53,8 @@ alias clo='sudo pacman -Rns $(pacman -Qtdq)'
 alias drp='linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc & disown'
 alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=literal'
 alias anime='ani-cli -q best'
-alias serverfs='sshfs artic@10.3.44.10:/ /mnt/server'
+alias mnt-server='sshfs artic@10.3.44.10:/ /mnt/server'
+
 ## Function to extract any sort of archive
 extract () {
      if [ -f $1 ] ; then
