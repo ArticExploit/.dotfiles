@@ -1,4 +1,4 @@
-#! /bin/bash
+#/bin/bash
 set $mod Mod4
 
 #########################################################################################
@@ -172,4 +172,14 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+c mode "resize"
+# Resizing by 1
+bindsym $mod+Ctrl+Right resize shrink width 1 px
+bindsym $mod+Ctrl+Up resize grow height 1 px
+bindsym $mod+Ctrl+Down resize shrink height 1 px
+bindsym $mod+Ctrl+Left resize grow width 1 px
+
+# Resizing by 10
+bindsym $mod+Ctrl+Shift+Right resize shrink width 10 px
+bindsym $mod+Ctrl+Shift+Up resize grow height 10 px
+bindsym $mod+Ctrl+Shift+Down resize shrink height 10 px
+bindsym $mod+Ctrl+Shift+Left resize grow width 10 px
