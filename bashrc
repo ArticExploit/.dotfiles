@@ -51,9 +51,10 @@ alias gc='git commit -m'
 alias gp='git push'
 alias clo='sudo pacman -Rns $(pacman -Qtdq)'
 alias drp='linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc & disown'
+alias drpk='killall linux-discord-rich-presence'
 alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=literal'
-alias anime='ani-cli -q best'
 alias mnt-server='sshfs artic@10.3.44.10:/ /mnt/server'
+alias ani='anipy-cli'
 
 ## Function to extract any sort of archive
 extract () {
