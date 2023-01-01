@@ -18,6 +18,7 @@ exec --no-startup-id discord
 exec --no-startup-id linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id i3-msg 'workspace 1; exec kitty'
+exec --no-startup-id sshfs artic@10.3.44.10:/ /mnt/server
 for_window [class=kitty workspace="1"] floating enable
 for_window [class=kitty workspace="1"] resize set 730 550
 for_window [class=kitty workspace="1"] move [absolute] position center
