@@ -42,7 +42,7 @@ shot5 () {
 }
 
 delss () {
-	ssh artic@10.3.44.10 "rm -r /home/artic/docker-compose/q-apache/html/img/*"
+	ssh artic@10.3.44.10 "rm -r /home/artic/docker-compose/q-apache/html/img/*.png"
 }
 
 shotnup () {
