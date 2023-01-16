@@ -48,7 +48,7 @@ delss () {
 shotnup () {
     RND=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w ${1:-8} | head -n 1)
 	FILE=""$RND".png"
-	URL="https://media.articexploit.xyz:8443/img/${FILE}"
+	URL="https://articexploit.xyz:8443/img/${FILE}"
 	flameshot gui -r > /home/artic/Pictures/screenshots/$FILE
 	scp -i ~/.ssh/artic /home/artic/Pictures/screenshots/$FILE artic@10.3.44.10:/home/artic/docker-compose/q-apache/html/img
 	rm -r /home/artic/Pictures/screenshots/$FILE
