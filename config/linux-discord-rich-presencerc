@@ -15,12 +15,12 @@ cat <<EOF
         "end_timestamp": null, \
         "buttons": [ \
        { \
-                "label": ".dotfiles", \
-                "url": "https://github.com/ArticExploit/dotfiles" \
+                "label": "website / info", \
+                "url": "https://articexploit.xyz:8443/" \
             }, \
        { \
-                "label": "PGP and SSH keys", \
-                "url": "https://media.articexploit.xyz:8443/keys/" \
+                "label": "a cool website", \
+                "url": "https://arfff.dog/" \
             } \
         ] \
     } \
