@@ -15,12 +15,8 @@ cat <<EOF
         "end_timestamp": null, \
         "buttons": [ \
        { \
-                "label": "website / info", \
+                "label": "my website", \
                 "url": "https://articexploit.xyz:8443/" \
-            }, \
-       { \
-                "label": "a cool website", \
-                "url": "https://arfff.dog/" \
             } \
         ] \
     } \
