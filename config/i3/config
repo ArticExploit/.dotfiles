@@ -3,7 +3,7 @@ set $mod Mod4
 
 #########################################################################################
 # Assign Workspaces:
-assign [class="Deadbeef"] $ws5
+assign [class="Deadbeef"] $ws3
 
 #startup commands
 exec_always --no-startup-id /home/artic/.config/scripts/xkb/run-session.sh
