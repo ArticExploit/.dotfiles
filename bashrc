@@ -50,8 +50,6 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias clo='sudo pacman -Rns $(pacman -Qtdq)'
-alias drp='linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc & disown'
-alias drpk='killall linux-discord-rich-presence'
 alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=literal'
 alias ani='anipy-cli'
 
