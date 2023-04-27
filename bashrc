@@ -32,7 +32,7 @@ alias ls='ls -AhN --color=auto --group-directories-first --quoting-style=literal
 alias rem='sudo pacman -Rns --noconfirm'
 alias remy='yay -Rns --noconfirm'
 alias server='ssh artic@10.3.44.10'
-alias syup='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
+alias syup='sudo pacman -Syyu --noconfirm && yay -Syu --noconfirm'
 alias x='startx'
 alias yta='yt-dlp -x --audio-format mp3 -f bestaudio/best'
 alias ytv='yt-dlp -f bestvideo+bestaudio -S res,ext:mp4:m4a --recode mp4'
@@ -83,3 +83,19 @@ ssh-add ~/.ssh/artic
 
 #aestheticc
 clear && fastfetch
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
