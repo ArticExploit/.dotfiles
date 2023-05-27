@@ -10,6 +10,7 @@ exec_always --no-startup-id /home/artic/.config/scripts/xkb/run-session.sh
 exec_always --no-startup-id xrandr -s 5120x1440
 exec_always --no-startup-id feh --bg-scale /home/artic/Pictures/retro.png
 exec_always --no-startup-id /home/artic/.config/polybar/poly.sh
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id sshfs artic@10.3.44.10:/ /mnt/server
