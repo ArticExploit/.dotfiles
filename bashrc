@@ -52,6 +52,8 @@ alias gp='git push'
 alias clo='sudo pacman -Rns $(pacman -Qtdq)'
 alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=literal'
 alias matrix='unimatrix -l=k -s=97 -fa'
+alias wg-up='wg-quick up wg0'
+alias wg-down'wg-quick down wg0'
 
 ## Function to extract any sort of archive
 extract () {
