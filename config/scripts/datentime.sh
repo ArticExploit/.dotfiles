@@ -4,4 +4,4 @@
 utc_time=$(date -u +"%d/%b/%Y %H:%M")
 
 # Copy the time to the clipboard
-echo $utc_time | xclip -selection clipboard
+echo "$utc_time UTC" | xclip -r -sel clip
