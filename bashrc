@@ -54,6 +54,7 @@ alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=litera
 alias matrix='unimatrix -l=k -s=97 -fa'
 alias wgu='wg-quick up wg0'
 alias wgd='wg-quick down wg0'
+alias sd='cd /home/artic/Desktop/stable-diffusion-webui && ./webui.sh --opt-sdp-no-mem-attention --opt-split-attention'
 
 ## Function to extract any sort of archive
 extract () {
@@ -85,19 +86,3 @@ ssh-add ~/.ssh/artic
 
 #aestheticc
 clear && fastfetch
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
-        . "/usr/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
