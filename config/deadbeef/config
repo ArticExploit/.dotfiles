@@ -94,8 +94,8 @@ junk.enable_cp936_detection 1
 junk.enable_shift_jis_detection 1
 logwindow.geometry.h 963
 logwindow.geometry.w 1979
-logwindow.geometry.x 1577
-logwindow.geometry.y 277
+logwindow.geometry.x 1554
+logwindow.geometry.y 254
 mainwin.geometry.h 1351
 mainwin.geometry.w 5116
 mainwin.geometry.x 1
@@ -160,39 +160,39 @@ output_plugin pulseaudio2
 playback.loop 1
 playback.order 0
 playback.volume.normalized 1.0000000
-playlist.current 6
-playlist.cursor.0 -1
-playlist.cursor.1 763
-playlist.cursor.10 29
-playlist.cursor.11 0
+playlist.current 5
+playlist.cursor.0 1
+playlist.cursor.1 51
+playlist.cursor.10 21
+playlist.cursor.11 50
 playlist.cursor.12 0
 playlist.cursor.13 0
 playlist.cursor.14 0
 playlist.cursor.15 0
-playlist.cursor.2 106
-playlist.cursor.3 3
-playlist.cursor.4 16
-playlist.cursor.5 234
-playlist.cursor.6 856
-playlist.cursor.7 42
-playlist.cursor.8 2
-playlist.cursor.9 28
+playlist.cursor.2 3
+playlist.cursor.3 1
+playlist.cursor.4 7
+playlist.cursor.5 0
+playlist.cursor.6 1272
+playlist.cursor.7 129
+playlist.cursor.8 42
+playlist.cursor.9 0
 playlist.groups.spacing 0
-playlist.scroll.0 0
-playlist.scroll.1 17717
-playlist.scroll.10 163
-playlist.scroll.11 0
+playlist.scroll.0 -1
+playlist.scroll.1 -51
+playlist.scroll.10 -21
+playlist.scroll.11 154
 playlist.scroll.12 0
 playlist.scroll.13 0
 playlist.scroll.14 0
 playlist.scroll.15 0
-playlist.scroll.2 2194
-playlist.scroll.3 0
-playlist.scroll.4 -11
-playlist.scroll.5 -234
-playlist.scroll.6 909
-playlist.scroll.7 386
-playlist.scroll.8 -2
+playlist.scroll.2 0
+playlist.scroll.3 -1
+playlist.scroll.4 -7
+playlist.scroll.5 0
+playlist.scroll.6 29933
+playlist.scroll.7 806
+playlist.scroll.8 0
 playlist.scroll.9 0
 playlist.scroll.cursorfollowplayback 1
 playlist.scroll.followplayback 1
@@ -203,20 +203,20 @@ playlist.tab.00003 Eurobeat
 playlist.tab.00004 Japanese Hip-Hop
 playlist.tab.00005 Jazz & Blues
 playlist.tab.00006 Lo-Fi
-playlist.tab.00007 OG & More
-playlist.tab.00008 Samurai Champloo - The Way of the Samurai
-playlist.tab.00009 Trash
-playlist.tab.00010 Vibe
-playlist.tab.00011 Nostalgia
+playlist.tab.00007 Nostalgia
+playlist.tab.00008 OG & More
+playlist.tab.00009 Samurai Champloo - The Way of the Samurai
+playlist.tab.00010 Trash
+playlist.tab.00011 Vibe
 prefwin.geometry.h 713
 prefwin.geometry.w 1089
 prefwin.geometry.x 1574
 prefwin.geometry.y 502
 replaygain.processing_flags 0
-resume.paused 0
-resume.playlist -1
-resume.position -1.000000
-resume.track -1
+resume.paused 1
+resume.playlist 5
+resume.position 104.76887
+resume.track 238
 resume_last_session 0
 spectrogram.color.gradient_00 65535 0 0
 spectrogram.color.gradient_01 65535 32896 0

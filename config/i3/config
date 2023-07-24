@@ -13,19 +13,16 @@ exec_always --no-startup-id /home/artic/.config/polybar/poly.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc
 exec --no-startup-id kdeconnect-indicator
+exec_always --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id sshfs artic@10.3.44.10:/ /mnt/server
 exec librewolf
 exec discord
 exec_always --no-startup-id picom
 
 #custom bindings
-bindsym F7 exec pactl set-card-profile alsa_card.usb-GuangZhou_FiiO_Electronics_Co._Ltd_FiiO_Q1_FA141069-00 off && pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:iec958-stereo
-bindsym F8 exec pactl set-card-profile alsa_card.usb-GuangZhou_FiiO_Electronics_Co._Ltd_FiiO_Q1_FA141069-00 output:iec958-stereo && pactl set-card-profile alsa_card.pci-0000_00_1f.3 off
 bindsym XF86AudioPlay exec playerctl play-pause -a
 bindsym XF86AudioNext exec playerctl next -a
 bindsym XF86AudioPrev exec playerctl previous -a
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
 bindsym $mod+Shift+Delete exec /home/artic/.config/scripts/screenshot.sh
 bindsym $mod+grave exec rofi -show drun -theme /home/artic/.config/rofi/config.rasi
 
