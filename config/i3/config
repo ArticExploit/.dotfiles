@@ -13,8 +13,7 @@ exec_always --no-startup-id /home/artic/.config/polybar/poly.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id linux-discord-rich-presence -c ~/.config/linux-discord-rich-presencerc
 exec --no-startup-id kdeconnect-indicator
-exec_always --no-startup-id easyeffects --gapplication-service
-exec_always --no-startup-id pw-metadata -n settings 0 clock.force-rate 192000
+exec_always --no-startup-id pw-metadata -n settings 0 clock.force-rate 384000
 exec_always --no-startup-id pw-metadata -n settings 0 clock.force-quantum 4096
 exec_always --no-startup-id sshfs artic@10.3.44.10:/ /mnt/server
 exec librewolf
