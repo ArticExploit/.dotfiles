@@ -43,7 +43,6 @@ alias tree='tree -C --dirsfirst --noreport'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias vinyl='pactl load-module module-loopback'
 alias vim='nvim'
 alias mkdir='mkdir -p'
 alias ga='git add'
@@ -52,9 +51,7 @@ alias gp='git push'
 alias clo='sudo pacman -Rns $(pacman -Qtdq)'
 alias ll='ls -AhNl --color=auto --group-directories-first --quoting-style=literal'
 alias matrix='unimatrix -l=k -s=97 -fa'
-alias wgu='wg-quick up wg0'
-alias wgd='wg-quick down wg0'
-alias sd='cd /home/artic/Desktop/stable-diffusion-webui && ./webui.sh --opt-sdp-no-mem-attention --opt-split-attention'
+alias dns-flush='sudo resolvectl flush-caches && sudo systemd-resolve --flush-caches'
 
 ## Function to extract any sort of archive
 extract () {
